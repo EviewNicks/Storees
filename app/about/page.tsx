@@ -1,6 +1,9 @@
-import React from "react";
+import db from "@/utils/db";
 
-const AboutPage = () => {
+const AboutPage = async () => {
+
+
+  
   return <div>AboutPage</div>;
 };
 
