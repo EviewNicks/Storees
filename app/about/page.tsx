@@ -1,10 +1,7 @@
-import db from "@/utils/db";
+const AboutPage =  () => {
+  // findUnique({ where: { id: 1 } });
 
-const AboutPage = async () => {
-
-
-  
-  return <div>AboutPage</div>;
+  return <div>H2 About Page</div>;
 };
 
 export default AboutPage;
