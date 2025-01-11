@@ -1,7 +1,16 @@
-import React from "react";
+import ProductsContainer from "@/components/products/ProductsContainer";
 
-const ProductsPage = () => {
-  return <div>ProductsPage</div>;
+interface SearchParams {
+  layout?: string;
+  search?: string;
+}
+
+const ProductsPage = ({ searchParams }: { searchParams: SearchParams }) => {
+  console.log({ params: {}, searchParams });
+  const layout = searchParams.layout || "grid";
+  const search = searchParams.search || "";
+
+  return <ProductsContainer layout={layout} search={search} />;
 };
 
 export default ProductsPage;
