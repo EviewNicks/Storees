@@ -5,6 +5,9 @@ import LinksDropdown from "./LinksDropdown";
 import Logo from "./Logo";
 import NavSearch from "./NavSearch";
 import { Suspense } from "react";
+
+
+
 function Navbar() {
   return (
     <nav className="border-b">
