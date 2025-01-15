@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { SignInButton } from "@clerk/nextjs";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
-import { LuTrash2, LuSquare } from "react-icons/lu";
+import { LuTrash2 } from "react-icons/lu";
+import { FaRegEdit } from "react-icons/fa";
 
 type btnSize = "default" | "lg" | "sm";
 
@@ -49,7 +50,7 @@ export const IconButton = ({ actionType }: { actionType: actionType }) => {
   const renderIcon = () => {
     switch (actionType) {
       case "edit":
-        return <LuSquare />;
+        return <FaRegEdit />;
       case "delete":
         return <LuTrash2 />;
       default:

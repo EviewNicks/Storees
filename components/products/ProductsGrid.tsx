@@ -5,8 +5,6 @@ import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
 import FavoriteToggleButton from "./FavoriteToggleButton";
 
-
-
 type ProductProps = {
   products: Product[];
 };
